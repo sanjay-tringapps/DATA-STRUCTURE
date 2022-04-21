@@ -41,7 +41,7 @@ public class Node {
 		 
 		 if (temp == null || temp.next == null)
 		 {
-			 System.out.println("POSTION IS MORE THAN NO OF NODES");
+			 logger.log("POSTION IS MORE THAN NO OF NODES");
 			 return head;
 		 }
 		 
@@ -55,13 +55,13 @@ public class Node {
 		 Node current = head;    
 	        if(head == null)
 		{    
-	            System.out.println("LIST IS EMPTY");    
+	            logger.log("LIST IS EMPTY");    
 	            return;    
 	        }    
 	        System.out.println("THE VALUES ARE");    
 	        while(current != null) {    
 	            //Prints each node by incrementing pointer    
-	            System.out.println(current.data + " ");    
+	            logger.log(current.data + " ");    
 	            current = current.next;    
 	        }    
 	}
